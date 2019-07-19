@@ -36,6 +36,9 @@
                                 </state>
                                 <connections>
                                     <action selector="existingPlans:" destination="O9B-cn-IgR" eventType="touchUpInside" id="hml-eT-fCx"/>
+                                    <segue destination="iZl-EH-ITY" kind="popoverPresentation" popoverAnchorView="aMo-cK-E0o" id="JBx-Ib-A1H">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZK6-F8-Yca">
@@ -64,7 +67,7 @@
         <!--Question 1-->
         <scene sceneID="Y2q-1C-vi5">
             <objects>
-                <viewController title="Question 1" id="heg-ud-7Kd" customClass="questionsViewController" customModule="travelBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Question 1" id="heg-ud-7Kd" customClass="questionOneViewController" customModule="travelBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yJQ-fe-JRc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +113,9 @@
                                 <state key="normal" title="Beach">
                                     <color key="titleColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="setAtmosphereWithSender:" destination="heg-ud-7Kd" eventType="touchUpInside" id="REZ-oh-kit"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkF-NM-8v0">
                                 <rect key="frame" x="98" y="465" width="178" height="159"/>
@@ -118,6 +124,9 @@
                                 <state key="normal" title="Nature">
                                     <color key="titleColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="setAtmosphereWithSender:" destination="heg-ud-7Kd" eventType="touchUpInside" id="mLb-9W-xPl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrX-Zt-eDc">
                                 <rect key="frame" x="11" y="293" width="165" height="168"/>
@@ -126,6 +135,9 @@
                                 <state key="normal" title="City">
                                     <color key="titleColor" red="1" green="0.97254901959999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="setAtmosphereWithSender:" destination="heg-ud-7Kd" eventType="touchUpInside" id="nhz-5b-i4X"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -139,7 +151,7 @@
         <!--Question 2-->
         <scene sceneID="0qt-j3-J0x">
             <objects>
-                <viewController title="Question 2" id="lTV-7A-vHY" sceneMemberID="viewController">
+                <viewController title="Question 2" id="lTV-7A-vHY" customClass="questionTwoViewController" customModule="travelBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GAa-PI-vrd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,7 +162,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled design-2" translatesAutoresizingMaskIntoConstraints="NO" id="udJ-ae-mSl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="826"/>
+                                <rect key="frame" x="-48" y="-31" width="423" height="910"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="culture 1" translatesAutoresizingMaskIntoConstraints="NO" id="oqJ-8K-bJw">
@@ -190,6 +202,9 @@
                                 <state key="normal" title="Culture">
                                     <color key="titleColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="setMotivationWithSender:" destination="lTV-7A-vHY" eventType="touchUpInside" id="7jR-fx-p11"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xK-Eg-2EA">
                                 <rect key="frame" x="197" y="288" width="164" height="177"/>
@@ -198,6 +213,9 @@
                                 <state key="normal" title="Festivity">
                                     <color key="titleColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="setMotivationWithSender:" destination="lTV-7A-vHY" eventType="touchUpInside" id="2ed-ef-2Xu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utF-6z-4Yy">
                                 <rect key="frame" x="102" y="453" width="171" height="173"/>
@@ -206,6 +224,9 @@
                                 <state key="normal" title="Adventure">
                                     <color key="titleColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="setMotivationWithSender:" destination="lTV-7A-vHY" eventType="touchUpInside" id="CkD-JX-Knu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -219,7 +240,7 @@
         <!--Question 3-->
         <scene sceneID="naX-qr-FVP">
             <objects>
-                <viewController title="Question 3" id="VLi-GS-Lr7" sceneMemberID="viewController">
+                <viewController title="Question 3" id="VLi-GS-Lr7" customClass="questionThreeViewController" customModule="travelBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mNx-yI-EDz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,7 +265,9 @@
                                     <color key="titleColor" red="0.98431372549019602" green="0.96078431372549022" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="iZl-EH-ITY" kind="show" id="2NJ-10-8gQ"/>
+                                    <segue destination="iZl-EH-ITY" kind="popoverPresentation" popoverAnchorView="gGc-lC-5NM" id="2NJ-10-8gQ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What weather do you prefer?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87l-Yy-0nm">
@@ -261,6 +284,9 @@
                                 <state key="normal" title="Warm">
                                     <color key="titleColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="setWeatherWithSender:" destination="VLi-GS-Lr7" eventType="touchUpInside" id="cHc-ZH-eDf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGr-2v-DKY">
                                 <rect key="frame" x="206" y="288" width="149" height="175"/>
@@ -269,6 +295,9 @@
                                 <state key="normal" title="Cool">
                                     <color key="titleColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="setWeatherWithSender:" destination="VLi-GS-Lr7" eventType="touchUpInside" id="1zF-zF-GK2"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rainy 2" translatesAutoresizingMaskIntoConstraints="NO" id="jUb-Jx-ZTX">
                                 <rect key="frame" x="118" y="469" width="140" height="139"/>
@@ -281,6 +310,9 @@
                                 <state key="normal" title="Rainy">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="setWeatherWithSender:" destination="VLi-GS-Lr7" eventType="touchUpInside" id="YBI-wE-sSt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -294,23 +326,71 @@
         <!--Your Destined Destination-->
         <scene sceneID="cbd-H7-MKF">
             <objects>
-                <viewController title="Your Destined Destination" id="iZl-EH-ITY" sceneMemberID="viewController">
+                <viewController title="Your Destined Destination" id="iZl-EH-ITY" customClass="resultsViewController" customModule="travelBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="msf-ed-Nqm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled design-2" translatesAutoresizingMaskIntoConstraints="NO" id="09b-fh-nd8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="826"/>
+                                <rect key="frame" x="-29" y="-49" width="404" height="920"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zCd-H8-vza">
-                                <rect key="frame" x="33" y="122" width="308" height="194"/>
+                                <rect key="frame" x="16" y="44" width="343" height="294"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV7-G9-L3s">
-                                <rect key="frame" x="151" y="348" width="73" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You got: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV7-G9-L3s">
+                                <rect key="frame" x="131" y="346" width="112" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="27"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Destination" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHG-1k-CFS">
+                                <rect key="frame" x="16" y="361" width="343" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="27"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guD-X7-ifW">
+                                <rect key="frame" x="206" y="741" width="135" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="27"/>
+                                <state key="normal" title="Start over">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.74117647060000003" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="O9B-cn-IgR" kind="popoverPresentation" popoverAnchorView="guD-X7-ifW" id="C6o-Ha-zlc">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYL-nz-zJL">
+                                <rect key="frame" x="93" y="447" width="13" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="27"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$$$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ou8-DB-L3M">
+                                <rect key="frame" x="254" y="447" width="39" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="27"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="suggestion1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ER-NW-KgC">
+                                <rect key="frame" x="0.0" y="488" width="198" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="20"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="suggestion2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awK-9c-jdW">
+                                <rect key="frame" x="178" y="488" width="190" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="20"/>
                                 <color key="textColor" red="0.98431372549999996" green="0.96078431369999995" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -318,6 +398,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1x6-MD-fWA"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationImage" destination="zCd-H8-vza" id="SM9-i1-bNo"/>
+                        <outlet property="destinationLabel" destination="QHG-1k-CFS" id="sdP-GI-GT1"/>
+                        <outlet property="suggestion1" destination="5ER-NW-KgC" id="tlp-lk-F7k"/>
+                        <outlet property="suggestion2" destination="awK-9c-jdW" id="VFq-0z-Qh6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Fu-0i-HhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -356,5 +442,9 @@
         <image name="travelBuddy-3" width="375" height="826"/>
         <image name="warm 1" width="240" height="240"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JBx-Ib-A1H"/>
+        <segue reference="C6o-Ha-zlc"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.23921568627450979" green="0.33333333333333331" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>

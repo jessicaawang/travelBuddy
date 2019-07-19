@@ -13,7 +13,6 @@
 		184521E822DF8C010035E3CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184521E722DF8C010035E3CB /* Assets.xcassets */; };
 		184521EB22DF8C010035E3CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184521E922DF8C010035E3CB /* LaunchScreen.storyboard */; };
 		184521F322DFDB030035E3CB /* startQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184521F222DFDB030035E3CB /* startQuizViewController.swift */; };
-		184521F522DFE0380035E3CB /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184521F422DFE0380035E3CB /* dataViewController.swift */; };
 		1890704822E10F510023D335 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1890704722E10F510023D335 /* PlayfairDisplay-Bold.ttf */; };
 		1890704A22E123100023D335 /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1890704922E123100023D335 /* FredokaOne-Regular.ttf */; };
 		4C017E9222E1B105001994FA /* questionTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C017E9122E1B105001994FA /* questionTwoViewController.swift */; };
@@ -31,7 +30,6 @@
 		184521EA22DF8C010035E3CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184521EC22DF8C010035E3CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184521F222DFDB030035E3CB /* startQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startQuizViewController.swift; sourceTree = "<group>"; };
-		184521F422DFE0380035E3CB /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataViewController.swift; sourceTree = "<group>"; };
 		1890704722E10F510023D335 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-Bold.ttf"; path = "../../../Downloads/Playfair_Display/PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		1890704922E123100023D335 /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FredokaOne-Regular.ttf"; path = "../../../Downloads/Fredoka_One/FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
 		4C017E8A22E193FE001994FA /* travelBuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "travelBuddy-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -74,11 +72,10 @@
 				184521DD22DF8BFF0035E3CB /* AppDelegate.swift */,
 				184521E122DF8BFF0035E3CB /* Main.storyboard */,
 				4C017E9722E1B2D5001994FA /* resultsViewController.swift */,
-				4C017E9522E1B24A001994FA /* questionThreeViewController.swift */,
 				4C017E9322E1B204001994FA /* questionOneViewController.swift */,
 				4C017E9122E1B105001994FA /* questionTwoViewController.swift */,
+				4C017E9522E1B24A001994FA /* questionThreeViewController.swift */,
 				1890704722E10F510023D335 /* PlayfairDisplay-Bold.ttf */,
-				184521F422DFE0380035E3CB /* dataViewController.swift */,
 				184521F222DFDB030035E3CB /* startQuizViewController.swift */,
 				184521E722DF8C010035E3CB /* Assets.xcassets */,
 				184521E922DF8C010035E3CB /* LaunchScreen.storyboard */,
@@ -165,7 +162,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C017E9622E1B24A001994FA /* questionThreeViewController.swift in Sources */,
-				184521F522DFE0380035E3CB /* dataViewController.swift in Sources */,
 				184521F322DFDB030035E3CB /* startQuizViewController.swift in Sources */,
 				184521E622DF8BFF0035E3CB /* travelBuddy.xcdatamodeld in Sources */,
 				184521DE22DF8BFF0035E3CB /* AppDelegate.swift in Sources */,
